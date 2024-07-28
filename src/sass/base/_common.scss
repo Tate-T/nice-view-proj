@@ -1,12 +1,16 @@
 .container {
-    width: 300px;
-    padding: 0 10px;
-    outline: 1px solid rgb(5, 85, 87);
-    @media screen and (min-width: 768px) {
-        max-width: 736px;
-        padding: 0 16px;
-    }
-    @media screen and (min-width: 1200px) {
-        max-width: 1160px;
-    }
+  width: 300px;
+  padding: 0 10px;
+  outline: 1px solid rgb(5, 85, 87);
+  @media screen and (min-width: 768px) {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1160px;
+  }
+}
+
+body {
+  font-family: Poppins;
 }
