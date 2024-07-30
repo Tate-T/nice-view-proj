@@ -54,4 +54,10 @@ body {
 .header__list {
   display: flex;
   gap: 48px;
+}
+.header__item {
+  color: #fcfcfb;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
 }/*# sourceMappingURL=main.css.map */
