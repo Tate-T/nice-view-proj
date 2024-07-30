@@ -1,0 +1,12 @@
+.header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background: linear-gradient(to right, #7e6d53, #2d2a22);
+
+  &__list {
+    display: flex;
+    gap: 48px;
+  }
+  &__item {
+  }
+}
