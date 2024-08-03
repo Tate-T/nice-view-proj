@@ -1,31 +1,71 @@
 .hero {
+    background-image: url(../src/image/mobile/hero-bg@mobile-1x.webp);
+        background-repeat: no-repeat;
+    
+    background-size: cover;
+    padding-top: 15px;
+    padding-bottom: 60px;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../src/image/mobile/hero-bg@mobile-2x.webp);
+        }
+
     &__title {
         color: #7E6D53;
-        font-family: Poppins;
-        font-size: 72px;
+        font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+        }
+
+        @media screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__text {
         color: #7E6D53;
-        font-family: Poppins;
-        font-size: 24px;
+        text-align: center;
+        font-size: 16px;
         font-style: normal;
+        margin-bottom: 212px;
+        max-width: 184px;
         font-weight: 300;
         line-height: normal;
+        text-align: center;
 
+        @media screen and (min-width: 768px) {
+        }
+
+        @media screen and (min-width: 1200px) {
+            
+        }
     }
 
     &__button {
         color: #2D2A22;
-        font-family: Poppins;
-        font-size: 24px;
+        font-size: 20px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-right: 28px;
+        padding-left: 28px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
         border-radius: 16px;
-        background: var(--button-background, #FCFCFB);
+        background: #FCFCFB;
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1200px) {
+       
     }
 }
