@@ -1,0 +1,31 @@
+.hero {
+    &__title {
+        color: #7E6D53;
+        font-family: Poppins;
+        font-size: 72px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &__text {
+        color: #7E6D53;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+
+    }
+
+    &__button {
+        color: #2D2A22;
+        font-family: Poppins;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        border-radius: 16px;
+        background: var(--button-background, #FCFCFB);
+    }
+}
