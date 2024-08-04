@@ -1,40 +1,8 @@
 <!-- Dima work -->
 <section class="hero">
-<div class="container">
+<div class="container hero-container">
     <h2 class="hero__title">Nice view</h2>
     <p class="hero__text">For your comfortable life with your family</p>
     <button class="hero__button" type="submit" data-modal-open>Contact us</button>
 </div>
 </section>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button class="modal__close__button" type="button" data-modal-close>
-        <svg class="modal__close__icon" width="18" height="18">
-          <use href="./fones/symbol-defs-3.svg#icon-cross">
-          </use>
-        </svg>
-      </button>
-      <h2 class="modal__title">
-        Leave your contacts and we will contact you
-      </h2>
-      <ul class="modal__list">
-        <li class="modal__item">
-          <label for="name" class="modal__name">Name
-            <input id="name" type="text" class="modal__input" placeholder="Yulia"/>
-          </label>
-        </li>
-        <li class="modal__item">
-          <label for="phone" class="modal__name">Telephone
-            <input id="phone" type="tel" class="modal__input" placeholder="+380"/>
-          </label>
-        </li>
-        <li class="modal__item">
-          <label for="email" class="modal__name">Email
-            <input id="email" type="email" class="modal__input" placeholder="Contact@gmail.com" />
-          </label>
-        </li>
-      </ul>
-      <button class="modal__button" type="button" data-modal-close>Contact us</button>
-    </div>
-  </div>
-<script src="./js/hero.js"></script>
