@@ -3,14 +3,46 @@
   padding-bottom: 22px;
   background: linear-gradient(to right, #7e6d53, #2d2a22);
 
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    display: block;
+    width: 56px;
+  }
+
+  &__img {
+    width: 56px;
+  }
+
   &__list {
     display: flex;
     gap: 48px;
+
+    @media screen and (max-width: 480px) {
+      opacity: 0;
+    }
   }
-  &__item {
+
+  &__link {
     color: #fcfcfb;
     font-family: Inter;
     font-size: 16px;
     font-weight: 400;
+  }
+
+  &__button {
+    border-radius: 8px;
+    border: 1px solid #fcfcfb;
+    background: transparent;
+    height: 40px;
+    padding: 4px 29px;
+    color: #fcfcfb;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
   }
 }
