@@ -88,13 +88,13 @@
     &__text {
         font-size: 14px;
         font-weight: 400;
-        color: $info-color;
+        // color: $info-color;
         line-height: 1.71;
         letter-spacing: 0.42px;
     }
 
     &__name {
-        color: $info-color;
+        // color: $info-color;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -124,7 +124,7 @@
     }
 
     &__close__button:hover:focus {
-        fill: $onecolor;
+        // fill: $onecolor;
     }
 
 
@@ -145,7 +145,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    @include transit($timing: 250ms);
+    // @include transit($timing: 250ms);
 }
 
 .no-scroll {
