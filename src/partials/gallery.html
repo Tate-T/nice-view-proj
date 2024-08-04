@@ -1,10 +1,22 @@
 <section class="gallery">
     <div class="container">
         <h2 class="gallery-text">Gallery</h2>
-        <div class="gallery-images">
-        <img class="gallery-photo" src="../image/desctop/Gallery-1@desctop-1x.webp" alt="Gallery">
-        <img class="gallery-photo" src="../image/desctop/Gallery-2@desctop-1x.png.webp" alt="Gallery">
-        <img class="gallery-photo" src="../image/desctop/Gallery-3@desctop-1x.webp" alt="Gallery">
-    </div>
+        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
+    slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="-42" coverflow-effect-depth="100"
+    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true" >
+    <swiper-slide>
+      <img src="./image/desctop/Gallery-1@desctop-1x.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./image/desctop/Gallery-2@desctop-1x.png.webp" />
+    </swiper-slide>
+    <swiper-slide>
+      <img src="./image/desctop/Gallery-3@desctop-1x.webp" />
+    </swiper-slide>
+  </swiper-container>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</div>
+
     </div>
 </section>
