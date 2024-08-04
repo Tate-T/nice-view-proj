@@ -88,13 +88,11 @@
     &__text {
         font-size: 14px;
         font-weight: 400;
-        color: $info-color;
         line-height: 1.71;
         letter-spacing: 0.42px;
     }
 
     &__name {
-        color: $info-color;
         font-size: 12px;
         font-style: normal;
         font-weight: 400;
@@ -106,27 +104,12 @@
         gap: 4px;
     }
 
-    // &__icons {
-    //     position: absolute;
-    //     top: 32px;
-    //     left: 12px;
-    //     width: 14px;
-    //     @include transit($timing: 250ms);
-    //     height: 14px;
-    //     fill: black;
-    // }
-
     &__list {
         display: flex;
         flex-direction: column;
         gap: 10px;
         margin-bottom: 20px;
     }
-
-    &__close__button:hover:focus {
-        fill: $onecolor;
-    }
-
 
     &__label {
         display: flex;
@@ -145,7 +128,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    @include transit($timing: 250ms);
 }
 
 .no-scroll {
