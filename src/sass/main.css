@@ -1,28 +1,39 @@
 a {
+  color: none;
   text-decoration: none;
+  padding: 0;
+  margin: 0;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
 }
 
 img {
   display: block;
-  width: 100%;
   max-width: 100%;
   height: auto;
 }
 
 button {
-  display: block;
-  cursor: pointer;
   border: none;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
 }
 
 .container {
@@ -62,39 +73,12 @@ body {
   font-weight: 400;
 }
 
-<<<<<<< Updated upstream
-.hero__title {
-  color: #7E6D53;
-  font-family: Poppins;
-  font-size: 72px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.hero__text {
-  color: #7E6D53;
-  font-family: Poppins;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-.hero__button {
-  color: #2D2A22;
-  font-family: Poppins;
-  font-size: 24px;
-=======
 .hero {
-  background-image: url(../src/image/mobile/hero-bg@mobile-1x.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url(../../image/mobile/hero-bg@mobile-1x.webp);
   padding-top: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
   padding-bottom: 60px;
-}
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .hero {
-    background-image: url(../src/image/mobile/hero-bg@mobile-2x.webp);
-  }
 }
 .hero__title {
   color: #7E6D53;
@@ -122,19 +106,13 @@ body {
   padding-bottom: 14px;
   padding-right: 28px;
   padding-left: 28px;
->>>>>>> Stashed changes
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   border-radius: 16px;
-<<<<<<< Updated upstream
-  background: var(--button-background, #FCFCFB);
-}
-
-=======
   background: #FCFCFB;
 }
->>>>>>> Stashed changes
+
 .apartment {
   background: #FCFCFB;
   padding-bottom: 40px;
@@ -220,7 +198,6 @@ body {
   flex-shrink: 0;
 }
 
-<<<<<<< Updated upstream
 .gallery {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -240,8 +217,6 @@ body {
   margin-bottom: 20px;
 }
 
-=======
->>>>>>> Stashed changes
 .modal {
   display: flex;
   justify-content: center;
@@ -437,4 +412,130 @@ body {
 
 .no-scroll {
   overflow: hidden;
+}
+
+.modal {
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  width: 320px;
+}
+.modal__close__button {
+  background-color: transparent;
+  border-radius: 50%;
+  display: block;
+  width: 30px;
+  height: 30px;
+  fill: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+.modal__close__icon {
+  fill: black;
+  width: 16px;
+  transition-property: fill, background-color, color, box-shadow, opacity, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  height: 16px;
+}
+.modal__close__icon:hover {
+  fill: #188ce8;
+}
+.modal__title {
+  text-align: center;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+}
+.modal__input {
+  max-width: 320px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 16px;
+  border-radius: 16px;
+  border: 1px #35322D;
+  background: #FCFCFB;
+}
+.modal__input:focus {
+  outline: none;
+  border: 1px solid blue;
+}
+.modal__button {
+  color: #FCFCFB;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.96px;
+  border-radius: 8px;
+  background: #7E6D53;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: block;
+  margin-top: 28px;
+  padding: 14px 76px;
+  border-color: transparent;
+}
+.modal__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.42px;
+}
+.modal__name {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.modal__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.modal__label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  background: rgba(126, 109, 83, 0.4392156863);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  background-blend-mode: difference;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }/*# sourceMappingURL=main.css.map */
