@@ -1,0 +1,59 @@
+.touch {
+    &__all {
+        align-content: center;
+        text-align: center;
+    }
+
+
+    &__title {
+        font-weight: 500;
+        font-size: 40px;
+        color: #7e6d53;
+        margin-bottom: 8px;
+    }
+
+    &__subtitle {
+        font-weight: 300;
+        font-size: 24px;
+        color: #7e6d53;
+        margin-bottom: 20px;
+    }
+
+    &__box {
+        background: #7e6d53;
+        border-radius: 16px;
+        padding: 53px 70px;
+        width: 700px;
+        height: 226px;
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin: 0 auto;
+    }
+
+    &__contacts {
+        gap: 24px;
+        padding-right: 64px;
+
+    }
+
+    &__contact {
+
+        margin-bottom: 24px;
+    }
+
+    &__link {
+        color: #FFFF;
+        opacity: 0.6;
+    }
+
+    &__button {
+        border-radius: 8px;
+        padding: 6px 0px;
+        width: 224px;
+        height: 54px;
+        background: #fcfcfb;
+        font-size: 24px;
+        color: #7e6d53;
+    }
+}
