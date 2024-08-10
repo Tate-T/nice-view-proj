@@ -1,16 +1,21 @@
 <!-- Dima work -->
 <section class="hero">
 <div class="container">
-    <h2 class="hero__title">Nice view</h2>
+    <h2 class="hero__title">Nice view</h2>   
     <p class="hero__text">For your comfortable life with your family</p>
-    <button class="hero__button" type="submit" data-modal-open>Contact us</button>
+    <div class="hero__img">
+      <img src="../image/pavan.png" class="hero__photo" alt="hero">
+    </div>
+    <div class="fix">
+      <button class="hero__button" type="button" data-modal-open>Contact us</button>
+    </div>
 </div>
 </section>
-<div class="backdrop is-hidden" data-modal>
-    <div class="modal">
+<div class="hero-modal is-close is-fix" data-modal>
+    <div class="modal fixer">
       <button class="modal__close__button" type="button" data-modal-close>
-        <svg class="modal__close__icon" width="18" height="18">
-          <use href="./fones/symbol-defs-3.svg#icon-cross">
+        <svg class="modal__close__icon" data-modal-close>
+          <use href="../image/symbol-defs-3.svg#icon-cross">
           </use>
         </svg>
       </button>
@@ -37,4 +42,3 @@
       <button class="modal__button" type="button" data-modal-close>Contact us</button>
     </div>
   </div>
-<script src="./js/hero.js"></script>
