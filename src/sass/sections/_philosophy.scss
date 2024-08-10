@@ -1,0 +1,75 @@
+.philosophy {
+  max-width: 300px;
+  height: 630px;
+
+  @media screen and (min-width: 768px) {
+    max-width: 738px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1160px;
+  }
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../../image/desctop/Philosophy-bg@desctop-1x.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__title {
+    color: $name-color;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 16px;
+  }
+  &__discription {
+    color: $title-color;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__text {
+    color: $title-color;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 300;
+  }
+  &__svg {
+    width: 32px;
+    height: 32px;
+    margin-bottom: 24px;
+  }
+  &__list {
+    width: 497px;
+    display: flex;
+    flex-wrap: wrap;
+    outline: solid blue 2px;
+    margin-bottom: 44px;
+    margin-top: 44px;
+    gap: 72px;
+  }
+  &__item {
+    outline: solid green 1px;
+  }
+  &__item:last-child{
+    margin-left: 58px;
+  }
+  &__box {
+    width: 393px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    outline: solid yellow 2px;
+  }
+  &__div {
+    display: flex;
+    outline: solid black 2px;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .container {
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0.9)
+    );
+  }
+}
