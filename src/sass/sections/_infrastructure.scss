@@ -1,0 +1,98 @@
+.infrastructure {
+  background-image: url(../../image/desctop/Infrastructure@desctop-1x.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1160px;
+  }
+
+  &__title {
+    color: $title-color;
+    font-size: 28px;
+    font-weight: 500;
+
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  &__list {
+    width: 280px;
+    border-radius: 8px;
+    opacity: 0.8;
+    background: $text-color;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 37px;
+      width: 331px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 168px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    padding-left: 18px;
+
+    @media screen and (min-width: 768px) {
+      padding-left: 32px;
+    }
+  }
+
+  &__item:nth-child(2) {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 18px;
+  }
+
+  &__subtitle {
+    color: $bg-color;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50%;
+    border: 1px solid $bg-color;
+    width: 101px;
+    height: 101px;
+    padding: 20px 14px 14px 15px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  &__text {
+    color: $title-color;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 7px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin-left: 14px;
+    }
+  }
+
+  &__text:nth-child(2) {
+    margin-right: 14px;
+  }
+}
