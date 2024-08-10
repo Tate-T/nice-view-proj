@@ -5,67 +5,191 @@
   @media screen and (min-width: 768px) {
     max-width: 738px;
   }
+
   @media screen and (min-width: 1200px) {
     max-width: 1160px;
   }
+
   margin-left: auto;
   margin-right: auto;
   background-image: url(../../image/desctop/Philosophy-bg@desctop-1x.webp);
-  background-size: cover;
+  background-position: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (min-width: 320px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0)
+      ),
+      url(../../image/mobile/Philosophy-bg@mobile-1x.webp);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url(../../image/mobile/Philosophy-bg@mobile-2x.webp);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0)
+      ),
+      url(../../image/table/Philosophy-bg@table-1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url(../../image/table/Philosophy-bg@table-2x.webp);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0),
+        rgba(47, 48, 58, 0)
+      ),
+      url(../../image/desctop/Philosophy-bg@desctop-1x.webp);
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0),
+          rgba(47, 48, 58, 0)
+        ),
+        url(../../image/desctop/Philosophy-bg@desctop-2x.webp);
+    }
+  }
 
   &__title {
     color: $name-color;
     font-family: Poppins;
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300;
     padding-bottom: 16px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 19px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 24px;
+    }
   }
+
   &__discription {
     color: $title-color;
     font-family: Poppins;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
+
   &__text {
     color: $title-color;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 300;
   }
+
   &__svg {
     width: 32px;
     height: 32px;
     margin-bottom: 24px;
   }
+
   &__list {
-    width: 497px;
+    width: 280px;
     display: flex;
     flex-wrap: wrap;
-    outline: solid blue 2px;
-    margin-bottom: 44px;
-    margin-top: 44px;
-    gap: 72px;
+    margin-bottom: 32px;
+    padding-top: 20px;
+    gap: 20px;
+
+    @media screen and (min-width: 768px) {
+      width: 497px;
+      margin-bottom: 40px;
+      margin-top: 8px;
+      margin-right: 32px;
+      gap: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 497px;
+      margin-bottom: 44px;
+      margin-top: 12px;
+      margin-right: 0;
+      gap: 92px;
+    }
   }
+
   &__item {
-    outline: solid green 1px;
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+      width: 152px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: 1200px) {
+        width: 235px;
+        margin-left: auto;
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 1200px) {
+        margin-left: 20px;
+      }
+    }
   }
-  &__item:last-child{
-    margin-left: 58px;
-  }
+
   &__box {
-    width: 393px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    outline: solid yellow 2px;
+
+    @media screen and (min-width: 768px) {
+      width: 336px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 393px;
+    }
   }
+
   &__div {
-    display: flex;
-    outline: solid black 2px;
+    display: block;
     justify-content: space-around;
     align-items: center;
+    padding-bottom: 20px;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding-bottom: 0px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      padding-bottom: 0px;
+    }
   }
+
   .container {
     background: linear-gradient(
       rgba(255, 255, 255, 0.9),
