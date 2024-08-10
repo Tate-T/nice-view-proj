@@ -4,17 +4,80 @@
 
         <ul class="apartment__list">
             <li class="apartment__item">
-                <img class="apartment__image" src="./image/desctop/apartment-1@desctop-1x.webp" alt="Кімната номер 1">
+                <picture>
+                    <source
+                      srcset="./image/desctop/apartment-1@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-1@desctop-2x.webp 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./image/table/apartment-1@table-1x.webp 1x,
+                      ./image/table/apartment-1@table-2x.webp 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./image/mobile/apartment-1@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-1@mobile-2x.webp 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="apartment__image"
+                      alt="Кімната номер 1"
+                      src="./image/mobile/apartment-1@mobile-1x.webp 1x"
+                    />
+                  </picture>
                 <h2 class="apartment__title">Type 1</h2>
                 <p class="apartment__text">total area 23 meters</p>
             </li>
             <li class="apartment__item">
-                <img class="apartment__image" src="./image/desctop/apartment-2@desctop-1x.webp" alt="Кімната номер 2">
+                <picture>
+                    <source
+                      srcset="./image/desctop/apartment-2@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-2@desctop-2x.webp 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./image/table/apartment-2@table-1x.webp 1x,
+                      ./image/table/apartment-2@table-2x.webp 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./image/mobile/apartment-2@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-2@mobile-2x.webp 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="apartment__image"
+                      alt="Кімната номер 2"
+                      src="./image/mobile/apartment-2@mobile-1x.webp 1x"
+                    />
+                  </picture>
                 <h2 class="apartment__title">Type 2</h2>
                 <p class="apartment__text">total area 27 meters</p>
             </li>
             <li class="apartment__item">
-                <img class="apartment__imga" src="./image/desctop/apartment-3@desctop-1x.webp" alt="Кімната номер 3">
+                <picture>
+                    <source
+                      srcset="./image/desctop/apartment-3@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-3@desctop-2x.webp 2x"
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="./image/table/apartment-3@table-1x.webp 1x,
+                      ./image/table/apartment-3@table-2x.webp 2x"
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="./image/mobile/apartment-3@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-3@mobile-2x.webp 2x"
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="apartment__image"
+                      alt="Кімната номер 3"
+                      src="./image/mobile/apartment-3@mobile-1x.webp 1x"
+                    />
+                  </picture>
                 <h2 class="apartment__title">Type 3</h2>
                 <p class="apartment__text">total area 31 meters</p>
             </li>
