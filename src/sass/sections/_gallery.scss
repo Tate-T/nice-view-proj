@@ -1,50 +1,71 @@
 .gallery {
   padding-top: 100px;
   padding-bottom: 100px;
-  background:   #EDE9E3;
+  background: #ede9e3;
 }
 
-.gallery-images {
-gap: 32px;
-display: flex;
+.gallery-image {
+  width: 196px;
+  height: 346px;
+  @media screen and (max-width: 1199px) {
+    width: 152px;
+    height: 232px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 77px;
+height: 130px;
+  }
+}
+
+.gallery-main-image {
+  width: 556px;
+  height: 589px;
+  @media screen and (max-width: 1199px) {
+    width: 364px;
+    height: 395px;
+  }
+  @media screen and (max-width: 767px) {
+    width: 159px;
+height: 174px;
+  }
 }
 
 .gallery-text {
-color: --title-color;
-color: $title-color;
-font-family: Poppins;
-font-size: 40px;
-font-style: normal;
-line-height: normal;
-margin-bottom: 20px;
+  color: --title-color;
+  color: $title-color;
+  font-family: Poppins;
+  font-size: 40px;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 20px;
 }
 
 swiper-container {
-width: 100%;
-overflow: hidden;
-padding-top: 50px;
-padding-bottom: 50px;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 swiper-slide {
-background-position: center;
-background-size: cover;
-width: 196px;
-height: 346px;
-margin-bottom: 83px;
+  background-position: center;
+  background-size: cover;
+  width: 196px;
+  height: 346px;
+  margin-bottom: 83px;
 }
 
 swiper-slide:nth-child(2) {
-background-position: center;
-background-size: cover;
-width: 556px;
-height: 589px;
+  background-position: center;
+  background-size: cover;
+  width: 556px;
+  height: 589px;
 }
 
 swiper-slide img {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 .swiper-pagination-color {
-background-color: black;
+  background-color: black;
 }
