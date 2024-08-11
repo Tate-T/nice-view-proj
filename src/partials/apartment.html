@@ -5,79 +5,43 @@
         <ul class="apartment__list">
             <li class="apartment__item">
                 <picture>
-                    <source
-                      srcset="./image/desctop/apartment-1@desctop-1x.webp 1x,
-                      ./image/desctop/apartment-1@desctop-2x.webp 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="./image/table/apartment-1@table-1x.webp 1x,
-                      ./image/table/apartment-1@table-2x.webp 2x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./image/mobile/apartment-1@mobile-1x.webp 1x,
-                      ./image/mobile/apartment-1@mobile-2x.webp 2x"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      class="apartment__image"
-                      alt="Кімната номер 1"
-                      src="./image/mobile/apartment-1@mobile-1x.webp 1x"
-                    />
-                  </picture>
+                    <source srcset="./image/desctop/apartment-1@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-1@desctop-2x.webp 2x" media="(min-width: 1200px)" />
+                    <source srcset="./image/table/apartment-1@table-1x.webp 1x,
+                      ./image/table/apartment-1@table-2x.webp 2x" media="(min-width: 768px)" />
+                    <source srcset="./image/mobile/apartment-1@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-1@mobile-2x.webp 2x" media="(max-width: 767px)" />
+                    <img class="apartment__image" alt="Кімната номер 1"
+                        src="./image/mobile/apartment-1@mobile-1x.webp 1x" />
+                </picture>
                 <h2 class="apartment__title">Type 1</h2>
                 <p class="apartment__text">total area 23 meters</p>
             </li>
             <li class="apartment__item">
                 <picture>
-                    <source
-                      srcset="./image/desctop/apartment-2@desctop-1x.webp 1x,
-                      ./image/desctop/apartment-2@desctop-2x.webp 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="./image/table/apartment-2@table-1x.webp 1x,
-                      ./image/table/apartment-2@table-2x.webp 2x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./image/mobile/apartment-2@mobile-1x.webp 1x,
-                      ./image/mobile/apartment-2@mobile-2x.webp 2x"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      class="apartment__image"
-                      alt="Кімната номер 2"
-                      src="./image/mobile/apartment-2@mobile-1x.webp 1x"
-                    />
-                  </picture>
+                    <source srcset="./image/desctop/apartment-2@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-2@desctop-2x.webp 2x" media="(min-width: 1200px)" />
+                    <source srcset="./image/table/apartment-2@table-1x.webp 1x,
+                      ./image/table/apartment-2@table-2x.webp 2x" media="(min-width: 768px)" />
+                    <source srcset="./image/mobile/apartment-2@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-2@mobile-2x.webp 2x" media="(max-width: 767px)" />
+                    <img class="apartment__image" alt="Кімната номер 2"
+                        src="./image/mobile/apartment-2@mobile-1x.webp 1x" />
+                </picture>
                 <h2 class="apartment__title">Type 2</h2>
                 <p class="apartment__text">total area 27 meters</p>
             </li>
             <li class="apartment__item">
                 <picture>
-                    <source
-                      srcset="./image/desctop/apartment-3@desctop-1x.webp 1x,
-                      ./image/desctop/apartment-3@desctop-2x.webp 2x"
-                      media="(min-width: 1200px)"
-                    />
-                    <source
-                      srcset="./image/table/apartment-3@table-1x.webp 1x,
-                      ./image/table/apartment-3@table-2x.webp 2x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./image/mobile/apartment-3@mobile-1x.webp 1x,
-                      ./image/mobile/apartment-3@mobile-2x.webp 2x"
-                      media="(max-width: 767px)"
-                    />
-                    <img
-                      class="apartment__image"
-                      alt="Кімната номер 3"
-                      src="./image/mobile/apartment-3@mobile-1x.webp 1x"
-                    />
-                  </picture>
+                    <source srcset="./image/desctop/apartment-3@desctop-1x.webp 1x,
+                      ./image/desctop/apartment-3@desctop-2x.webp 2x" media="(min-width: 1200px)" />
+                    <source srcset="./image/table/apartment-3@table-1x.webp 1x,
+                      ./image/table/apartment-3@table-2x.webp 2x" media="(min-width: 768px)" />
+                    <source srcset="./image/mobile/apartment-3@mobile-1x.webp 1x,
+                      ./image/mobile/apartment-3@mobile-2x.webp 2x" media="(max-width: 767px)" />
+                    <img class="apartment__image" alt="Кімната номер 3"
+                        src="./image/mobile/apartment-3@mobile-1x.webp 1x" />
+                </picture>
                 <h2 class="apartment__title">Type 3</h2>
                 <p class="apartment__text">total area 31 meters</p>
             </li>
@@ -90,34 +54,34 @@
     </div>
 </section>
 <section>
-    <div class="menu is-hidden" data-modal-apartment>
-        <div class="menu__window">
-            <button class="menu__close-button" type="button" data-modal-apartment-close>
-                <svg class="menu__close-icons" width="24" height="24">
+    <div class="apartment-menu is-hidden" data-modal-apartment>
+        <div class="apartment-menu__window">
+            <button class="apartment-menu__close-button" type="button" data-modal-apartment-close>
+                <svg class="apartment-menu__close-icons" width="24" height="24">
                     <use href="./image/desctop/symbol-defs.svg#icon-close-for-apartment">
 
                     </use>
                 </svg>
             </button>
-            <div class="menu__box">
-                <div class="menu__boxes">
-                    <img class="menu__photo" src="./image/desctop/man-with-computer.png"
+            <div class="apartment-menu__box">
+                <div class="apartment-menu__boxes">
+                    <img class="apartment-menu__photo" src="./image/desctop/man-with-computer.png"
                         alt="чоловік сидить в комп'ютері">
                 </div>
-                <div class="menu__boes">
-                    <h2 class="menu__title">Download the catalog</h2>
-                    <p class="menu__text">
+                <div class="apartment-menu__boes">
+                    <h2 class="apartment-menu__title">Download the catalog</h2>
+                    <p class="apartment-menu__text">
                         We will send you more photos,
                         videos and information by mail</p>
-                    <div class="menu__boxen">
+                    <div class="apartment-menu__boxen">
                         <form>
-                            <label for="email" class="menu-name">
+                            <label for="email" class="apartment-menu-name">
 
-                                <input id="email" type="email" placeholder="EMAIL ADRESS" class="menu__input"
+                                <input id="email" type="email" placeholder="EMAIL ADRESS" class="apartment-menu__input"
                                     required />
                             </label>
-                            <button class="menu__button-open" type="submit" data-backdrop-open>
-                                <svg class="menu__icons" width="24" height="24">
+                            <button class="apartment-menu__button-open" type="submit" data-backdrop-open>
+                                <svg class="apartment-menu__icons" width="24" height="24">
                                     <use href="./image/desctop/symbol-defs.svg#icon-send"></use>
                                 </svg>
                             </button>
