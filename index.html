@@ -19,7 +19,7 @@
     
     <title></title>
     <script type="module" crossorigin src="/nice-view-proj/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/nice-view-proj/assets/index-f6d85261.css">
+    <link rel="stylesheet" href="/nice-view-proj/assets/index-d617eb02.css">
   </head>
 
   <body>
@@ -295,9 +295,9 @@
     <section class="gallery">
   <div class="container">
     <h2 class="gallery-text">Gallery</h2>
-    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
-      slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="-42" coverflow-effect-depth="100"
-      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-depth="100" coverflow-effect-stretch="-40" coverflow-effect-modifier="1"
+      coverflow-effect-slide-shadows="true" autoplay-delay="2500">
       <swiper-slide>
         <picture>
           <source srcset="/nice-view-proj/assets/Gallery-1@desctop-1x-3d266a28.webp 1x, /nice-view-proj/assets/Gallery-1@desctop-2x-a860c35b.webp 2x"
@@ -333,7 +333,14 @@
         </picture>
       </swiper-slide>
     </swiper-container>
-
+    <script>
+      const swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
+        coverflow: {
+          stretch: -42,
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </div>
 
