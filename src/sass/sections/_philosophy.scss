@@ -105,6 +105,8 @@
     width: 32px;
     height: 32px;
     margin-bottom: 24px;
+    fill: transparent;
+    stroke: $name-color;
   }
 
   &__list {
