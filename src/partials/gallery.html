@@ -1,9 +1,9 @@
 <section class="gallery">
   <div class="container">
     <h2 class="gallery-text">Gallery</h2>
-    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
-      slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="-42" coverflow-effect-depth="100"
-      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+    <swiper-container class="mySwiper" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-depth="100" coverflow-effect-stretch="-40" coverflow-effect-modifier="1"
+      coverflow-effect-slide-shadows="true" autoplay-delay="2500">
       <swiper-slide>
         <picture>
           <source srcset="./image/desctop/Gallery-1@desctop-1x.webp 1x, ./image/desctop/Gallery-1@desctop-2x.webp 2x"
@@ -39,7 +39,14 @@
         </picture>
       </swiper-slide>
     </swiper-container>
-
+    <script>
+      const swiper = new Swiper('.swiper', {
+        effect: 'coverflow',
+        coverflow: {
+          stretch: -42,
+        }
+      });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </div>
 
