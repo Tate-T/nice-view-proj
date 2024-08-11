@@ -1,46 +1,47 @@
 <section class="gallery">
-    <div class="container">
-        <h2 class="gallery-text">Gallery</h2>
-        <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true" centered-slides="true"
-    slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="-42" coverflow-effect-depth="100"
-    coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false" >
-    <swiper-slide>
-      <picture>
-        <source srcset="./image/desctop/Gallery-1@desctop-1x.webp 1x, ./image/desctop/Gallery-1@desctop-2x.webp 2x"
-          type="image/webp" media=" (min-width: 1200px)" />
-        <source srcset="./image/table/Gallery-1@table-1x.webp 1x, ./image/table/Gallery-1@table-2x.webp 2x"
-          type="image/webp" media=" (min-width: 768px)" />
-        <source srcset="./image/mobile/Gallery-1@mobile-1x.webp 1x, ./image/mobile/Gallery-1@mobile-2x.webp 2x"
-          type="image/webp" media=" (min-width: 320px)" />
-        <img class="gallery-image" src="./image/desctop/Gallery-1@desctop-1x.webp" />
-      </picture>
-    </swiper-slide>
-    <swiper-slide>
-      <picture>
-        <source srcset="./image/desctop/Gallery-2@desctop-1x.png.webp 1x, ./image/desctop/Gallery-2@desctop-2x.webp 2x"
-          type="image/webp" media=" (min-width: 1200px)" />
-        <source srcset="./image/table/Gallery-2@table-1x.webp 1x, ./image/table/Gallery-2@table-2x.webp 2x"
-          type="image/webp" media=" (min-width: 768px)" />
-        <source srcset="./image/mobile/Gallery-2@mobile-1x.webp 1x, ./image/mobile/Gallery-2@mobile-2x.webp 2x"
-          type="image/webp" media=" (min-width: 320px)" />
-        <img class="gallery-main-image" src="./image/desctop/Gallery-2@desctop-1x.webp" />
-      </picture>
-    </swiper-slide>
-    <swiper-slide>
-      <picture>
-        <source srcset="./image/desctop/Gallery-3@desctop-1x.webp 1x, ./image/desctop/Gallery-3@desctop-2x.webp 2x"
-          type="image/webp" media=" (min-width: 1200px)" />
-        <source srcset="./image/table/Gallery-3@table-1x.webp 1x, ./image/table/Gallery-3@table-2x.webp 2x"
-          type="image/webp" media=" (min-width: 768px)" />
-        <source srcset="./image/mobile/Gallery-3@mobile-1x.webp 1x, ./image/mobile/Gallery-3@mobile-2x.webp 2x"
-          type="image/webp" media=" (min-width: 320px)" />
-        <img class="gallery-image" src="./image/desctop/Gallery-3@desctop-1x.webp" />
-      </picture>
-    </swiper-slide>
-  </swiper-container>
+  <div class="container">
+    <h2 class="gallery-text">Gallery</h2>
+    <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+      slides-per-view="auto" coverflow-effect-rotate="0" coverflow-effect-stretch="-42" coverflow-effect-depth="100"
+      coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+      <swiper-slide>
+        <picture>
+          <source srcset="./image/desctop/Gallery-1@desctop-1x.webp 1x, ./image/desctop/Gallery-1@desctop-2x.webp 2x"
+            type="image/webp" media=" (min-width: 1200px)" />
+          <source srcset="./image/table/Gallery-1@table-1x.webp 1x, ./image/table/Gallery-1@table-2x.webp 2x"
+            type="image/webp" media=" (min-width: 768px)" />
+          <source srcset="./image/mobile/Gallery-1@mobile-1x.webp 1x, ./image/mobile/Gallery-1@mobile-2x.webp 2x"
+            type="image/webp" media=" (min-width: 320px)" />
+          <img class="gallery-mobile-image" src="./image/desctop/Gallery-1@desctop-1x.webp" />
+        </picture>
+      </swiper-slide>
+      <swiper-slide>
+        <picture>
+          <source
+            srcset="./image/desctop/Gallery-2@desctop-1x.png.webp 1x, ./image/desctop/Gallery-2@desctop-2x.webp 2x"
+            type="image/webp" media=" (min-width: 1200px)" />
+          <source srcset="./image/table/Gallery-2@table-1x.webp 1x, ./image/table/Gallery-2@table-2x.webp 2x"
+            type="image/webp" media=" (min-width: 768px)" />
+          <source srcset="./image/mobile/Gallery-2@mobile-1x.webp 1x, ./image/mobile/Gallery-2@mobile-2x.webp 2x"
+            type="image/webp" media=" (min-width: 320px)" />
+          <img class="gallery-mobile-image2" src="./image/desctop/Gallery-2@desctop-1x.webp" />
+        </picture>
+      </swiper-slide>
+      <swiper-slide>
+        <picture>
+          <source srcset="./image/desctop/Gallery-3@desctop-1x.webp 1x, ./image/desctop/Gallery-3@desctop-2x.webp 2x"
+            type="image/webp" media=" (min-width: 1200px)" />
+          <source srcset="./image/table/Gallery-3@table-1x.webp 1x, ./image/table/Gallery-3@table-2x.webp 2x"
+            type="image/webp" media=" (min-width: 768px)" />
+          <source srcset="./image/mobile/Gallery-3@mobile-1x.webp 1x, ./image/mobile/Gallery-3@mobile-2x.webp 2x"
+            type="image/webp" media=" (min-width: 320px)" />
+          <img class="gallery-mobile-image" src="./image/desctop/Gallery-3@desctop-1x.webp" />
+        </picture>
+      </swiper-slide>
+    </swiper-container>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-</div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </div>
 
-    </div>
+  </div>
 </section>
