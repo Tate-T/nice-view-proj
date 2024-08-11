@@ -3,10 +3,19 @@
   padding-bottom: 22px;
   background: linear-gradient(to right, #7e6d53, #2d2a22);
 
+  &__phone {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &__box {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__logo {
@@ -22,8 +31,13 @@
     display: flex;
     gap: 48px;
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
       opacity: 0;
+    }
+
+    @media screen and (max-width: 1199px) {
+      gap: 32px;
+      margin-left: 80px;
     }
   }
 
@@ -44,5 +58,10 @@
     font-family: Poppins;
     font-size: 16px;
     font-weight: 300;
+    margin-left: 144px;
+
+    @media screen and (max-width: 1199px) {
+      display: none;
+    }
   }
 }
