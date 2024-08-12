@@ -18,14 +18,14 @@
 
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../../image/desctop/Philosophy-bg@desctop-1x.webp);
+  background-image: url(../image/desctop/Philosophy-bg@desctop-1x.webp);
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 
   @media screen and (min-width: 320px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0), rgba(47, 48, 58, 0)),
-      url(../../image/mobile/Philosophy-bg@mobile-1x.webp);
+      url(../image/mobile/Philosophy-bg@mobile-1x.webp);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -34,12 +34,12 @@
           rgba(47, 48, 58, 0),
           rgba(47, 48, 58, 0)
         ),
-        url(../../image/mobile/Philosophy-bg@mobile-2x.webp);
+        url(../image/mobile/Philosophy-bg@mobile-2x.webp);
     }
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0), rgba(47, 48, 58, 0)),
-      url(../../image/table/Philosophy-bg@table-1x.webp);
+      url(../image/table/Philosophy-bg@table-1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -47,12 +47,12 @@
           rgba(47, 48, 58, 0),
           rgba(47, 48, 58, 0)
         ),
-        url(../../image/table/Philosophy-bg@table-2x.webp);
+        url(../image/table/Philosophy-bg@table-2x.webp);
     }
   }
   @media screen and (min-width: 1200px) {
     background-image: linear-gradient(rgba(47, 48, 58, 0), rgba(47, 48, 58, 0)),
-      url(../../image/desctop/Philosophy-bg@desctop-1x.webp);
+      url(../image/desctop/Philosophy-bg@desctop-1x.webp);
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -60,7 +60,7 @@
           rgba(47, 48, 58, 0),
           rgba(47, 48, 58, 0)
         ),
-        url(../../image/desctop/Philosophy-bg@desctop-2x.webp);
+        url(../image/desctop/Philosophy-bg@desctop-2x.webp);
     }
   }
 
