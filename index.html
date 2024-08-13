@@ -19,7 +19,7 @@
     
     <title></title>
     <script type="module" crossorigin src="/nice-view-proj/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/nice-view-proj/assets/index-25ad7a08.css">
+    <link rel="stylesheet" href="/nice-view-proj/assets/index-e1cba4ea.css">
   </head>
 
   <body>
@@ -364,9 +364,8 @@
                         <a href="#" class="touch__link">(+33)7 00 55 54 79</a>
                     </li>
                 </ul>
-                <button class="touch__button" type="button">Contact us</button>
+                <button class="touch__button" type="submit" data-touch-open>Contact us</button>
             </div>
-        
     </div>
 </section>
     <section class="footer">
@@ -498,6 +497,37 @@
       <button class="modal__button" type="button" data-modal-close>Contact us</button>
     </div>
   </div>
+    <div class="backdrop is-hidden" data-touch>
+    <div class="touchmodal">
+      <button class="touchmodal__closebutton" type="button" data-touch-close>
+        <svg class="touchmodal__icon" width="18" height="18">
+          <use href="/nice-view-proj/assets/symbol-defs-3e622deb.svg#icon-close-for-apartment">
+          </use>
+        </svg>
+      </button>
+      <h2 class="touchmodal__title">
+        Leave your contacts and we will contact you
+      </h2>
+      <ul class="touchmodal__list">
+        <li class="touchmodal__item">
+          <label for="name" class="touchmodal__name">Name
+            <input id="name" type="text" class="touchmodal__input" placeholder="Yulia"/>
+          </label>
+        </li>
+        <li class="touchmodal__item">
+          <label for="phone" class="touchmodal__name">Telephone
+            <input id="phone" type="tel" class="touchmodal__input" placeholder="+380"/>
+          </label>
+        </li>
+        <li class="touchmodal__item">
+          <label for="email" class="touchmodal__name">Email
+            <input id="email" type="email" class="touchmodal__input" placeholder="Contact@gmail.com" />
+          </label>
+        </li>
+      </ul>
+      <button class="touchmodal__button" type="button" data-touch-close>Contact us</button>
+    </div>
+  </div>    
     
     
   </body>
