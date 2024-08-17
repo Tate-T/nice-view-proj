@@ -1,0 +1,98 @@
+.modal {
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition-property: transform;
+    transition-duration: 3s;
+    animation-name: modal;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+    animation-duration: 10s;
+    animation-delay: 3s;
+    animation-direction: unset;
+    transition-delay: 2s;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 40px;
+    max-width: 488px;
+
+    &__close__button {
+        background-color: transparent;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        display: block;
+        width: 30px;
+        height: 30px;
+        fill: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+    }
+
+    &__button {
+        // color: $title-color;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.87;
+        letter-spacing: 0.96px;
+        border-radius: 4px;
+        background-color: #188ce8;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        padding: 10px 52px;
+        margin: 0 auto;
+        display: block;
+        margin-top: 40px;
+        border-color: transparent;
+    }
+
+
+@keyframes modal {
+    0% {
+        background-color: white;     
+            transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+             perspective(17px)
+              rotate3d(1, 2, 3, 10deg)
+             translate3d(12px, 50%, 3em)
+            scale3d(2.5, 1.2, 0.3)
+            skew(30deg, 20deg);
+    }
+
+    50% {
+        background-color: transparent;
+    }
+
+    100% {
+        background-color: white;
+    }
+}
+
+}
+
+.backdrop {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-500%, -500%);
+}
