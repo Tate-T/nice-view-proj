@@ -1,29 +1,29 @@
 .hero {
-    background-image: 
+    background-image:
         url(../image/mobile/hero-bg@mobile-1x.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 15px;
+    padding-bottom: 60px;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: 
+        background-image:
             url(../image/mobile/hero-bg@mobile-2x.webp);
     }
 
     @media screen and (min-width: 768px) {
-        padding-top: 200px;
+        padding-top: 32px;
         padding-bottom: 200px;
-        background-image: 
+        background-image:
             url(../image/table/hero-bg@table-1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: 
+            background-image:
                 url(../image/table/hero-bg@table-2x.webp);
         }
     }
@@ -37,8 +37,54 @@
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: 
+            background-image:
                 url(../image/desctop/hero-bg@desctop-2x.webp);
+        }
+    }
+
+    &__img-1 {
+        position: relative;
+        opacity: 0.7;
+        left: -4px;
+        top: -16px;
+
+        @media screen and (min-width:768px) {
+            width: 85px;
+            height: 95px;
+            left: -143px;
+            top: 81px;
+            flex-shrink: 0;
+        }
+
+        @media screen and (min-width:1200px) {
+            width: 146px;
+            height: 163px;
+            flex-shrink: 0;
+            left: -363px;
+            top: -6px;
+        }
+    }
+
+    &__img-2 {
+        position: relative;
+        left: 6px;
+        top: -36px;
+        opacity: 0.7;
+
+        @media screen and (min-width:768px) {
+            width: 57px;
+            height: 119px;
+            flex-shrink: 0;
+            left: 120px;
+            top: 30px;
+        }
+
+        @media screen and (min-width:1200px) {
+            left: 363px;
+            top: -26px;
+            width: 88px;
+            height: 185px;
+            flex-shrink: 0;
         }
     }
 
@@ -51,6 +97,7 @@
         font-weight: 300;
         line-height: normal;
         width: 184px;
+        margin-bottom: 246px;
 
         @media screen and (min-width:768px) {
             color: var(--text-of-pages, #7E6D53);
@@ -60,6 +107,7 @@
             font-style: normal;
             font-weight: 300;
             line-height: normal;
+            margin-bottom: 383px;
         }
 
         @media screen and (min-width:1200px) {
@@ -79,40 +127,10 @@
         justify-content: center;
     }
 
-    &__img-1 {
-        width: 146px;
-        height: 163px;
-
-        @media screen and (min-width:768px) {}
-
-        @media screen and (min-width:1200px) {
-            width: 160px;
-            height: 180px;
-            margin-top: -31px;
-        }
-    }
-
-    // &__img-2 {}
-
     &__fix {
         display: flex;
         justify-content: center;
     }
-
-    // &__item-3 {
-    //     display: flex;
-    //     justify-content: end;
-    // }
-
-    //     &__item-2 {
-    //         display: flex;
-    //         justify-content: end;
-    //     }
-
-    // &__item-1 {
-    //     display: flex;
-    //     justify-content: end;
-    // }
 
     &__title {
         color: var(--text-of-pages, #7E6D53);
@@ -122,10 +140,16 @@
         font-weight: 400;
         text-align: center;
         line-height: normal;
+        animation-name: hero-title;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+        animation-duration: 5s;
+        animation-delay: 3s;
+        animation-direction: unset;
 
         @media screen and (min-width: 768px) {
             color: var(--text-of-pages, #7E6D53);
             font-family: Poppins;
+            margin-bottom: 7px;
             font-size: 72px;
             font-style: normal;
             font-weight: 400;
@@ -144,9 +168,46 @@
     }
 
     &__button {
+        animation-name: hero-button;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, -2.55);
+        animation-duration: 10s;
+        animation-delay: 3s;
+        animation-direction: unset;
+        color: var(--button-text, #2D2A22);
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        display: flex;
+        width: 200px;
+        height: 50px;
+        padding: 14px 28px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 0;
+        border-radius: 16px;
+        background: var(--button-background, #FCFCFB);
 
-
-
+        @media screen and (min-width:768px) {
+            color: var(--button-text, #2D2A22);
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+            display: flex;
+            width: 256px;
+            height: 54px;
+            padding: 14px 28px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+            border-radius: 16px;
+            background: var(--button-background, #FCFCFB);
+        }
 
         @media screen and (min-width:1200px) {
             display: flex;
@@ -166,9 +227,47 @@
             line-height: normal;
             border-radius: 16px;
             background: var(--button-background, #FCFCFB);
-            margin-left: 370px;
             margin-top: 103px;
-            margin-right: 305px;
+        }
+    }
+
+    @keyframes hero-title {
+        0% {
+            transform: translate(-0%, -20%);
+        }
+
+        30% {
+            transform: translate(0%, 0%);
+        }
+
+        70% {
+            transform: translate(-0%, -20%);
+        }
+
+        100% {
+            transform: translate(0%, 0%);
+        }
+    }
+
+    @keyframes hero-button {
+        0% {
+            background-color: #FCFCFB;
+            transform: scale(1.1);
+        }
+
+        30% {
+            background-color: transparent;
+            transform: scale(0.8);
+        }
+
+        70% {
+            transform: scale(1.2);
+            background-color: #7E6D53;
+        }
+
+        100% {
+            background-color: white;
+            transform: scale(1);
         }
     }
 }
