@@ -2,7 +2,7 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../../image/mobile/hero-bg@mobile-1x.webp);
+        url(../image/mobile/hero-bg@mobile-1x.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,7 +14,7 @@
     (min-resolution: 2dppx) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../image/mobile/hero-bg@mobile-2x.webp);
+            url(../image/mobile/hero-bg@mobile-2x.webp);
     }
 
     @media screen and (min-width: 768px) {
@@ -23,14 +23,14 @@
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../image/table/hero-bg@table-1x.webp);
+            url(../image/table/hero-bg@table-1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../image/table/hero-bg@table-2x.webp);
+                url(../image/table/hero-bg@table-2x.webp);
         }
     }
 
@@ -40,14 +40,14 @@
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
-            url(../../image/desctop/hero-bg@desctop-1x.webp);
+            url(../image/desctop/hero-bg@desctop-1x.webp);
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
                     rgba(47, 48, 58, 0.4)),
-                url(../../image/desctop/hero-bg@desctop-2x.webp);
+                url(../image/desctop/hero-bg@desctop-2x.webp);
         }
     }
 
